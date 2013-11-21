@@ -1,0 +1,83 @@
+<% provide(:title, 'Loans for Houses') %>
+
+<h1>Loans for Houses</h1>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide col-sm-offset-1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <!-- First carousel item -->
+    <div class="item active">
+      <%= tag("img", src: "/assets/houseLoanIconIpad7@2x.png", class: "img-responsive", alt: "First slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Example headline.</h1>
+        </div>
+      </div>
+
+      <!--img src="/assets/images/houseLoanIconIpad7@2x.png" alt="First slide"-->
+    </div>
+
+    <!-- Second carousel item -->
+    <div class="item">
+      <img data-src="Users/raj_mandavilli/rails_projects/usrcube/assets/images/houseLoanIconIpad7@2x.png" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Another example headline.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third carousel item -->
+    <div class="item">
+      <img data-src="Users/raj_mandavilli/rails_projects/usrcube/assets/images/houseLoanIconIpad7@2x.png" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>One more for good measure.</h1>
+          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- carousel navigation -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+<!-- display app info-->
+<div class="row">
+
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%= link_to image_tag("/assets/houseLoanIconIpad7@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
+    </p>
+		<p>
+     	<%= link_to "#", :class => "btn btn-default" do %>
+        Download from App Store &raquo;
+      <% end %>
+		</p>
+	</div>
+
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Loans for Houses</h3>
+      </div>
+    </div>
+ 		<p>
+    	Calculate and compare house loan payments from <strong>Fixed Rate Mortgage</strong> and <strong>Adjustable Rate Mortgage</strong>.  This app helps you to project monthly loan payments for either the Fixed Loan Mortgage or the Adjustable Rate Mortgage or both.  The <strong>TOTAL of All Payments</strong> and <strong>TOTAL of All Interest Paid</strong> to the lender are also evaluated.
+    </p>
+    <p>
+      Payments can be calculated for many houses each with different types of loans.  All loan data for different houses can be saved.  Therefore, there is no need to recreate the loans for different houses.
+    </p>
+  </div>
+</div> <!-- end app item row -->

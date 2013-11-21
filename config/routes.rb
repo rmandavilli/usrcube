@@ -8,6 +8,7 @@ Usrcube::Application.routes.draw do
   root  'static_pages#home'
 
   match '/apps',        to: 'static_pages#apps',        via: 'get'
+  match '/apps/houseLoan',        to: 'static_pages#houseLoan',        via: 'get'
 
   #match '/support',     to: 'static_pages#support',     via: 'get'
   #match '/support',     to: 'static_pages#support',     via: 'post'

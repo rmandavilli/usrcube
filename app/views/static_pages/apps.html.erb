@@ -1,8 +1,52 @@
 <% provide(:title, 'Apps') %>
 
 <h1>Apps</h1>
-<p>
-  This is the Apps page for the
-  <a href="http://www.usrcube.com/">USRcube</a>
-  company.
-</p>
+
+<%= render 'layouts/apps_header' %>
+
+<!-- rows displaying apps-->
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%= link_to image_tag("/assets/houseLoanIconIpad7@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
+      <h4 class="col-sm-offset-1">Loan4House</h4>
+    </p>
+	</div>
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Loans for Houses</h3>
+      </div>
+    </div>
+ 		<p>
+    	Calculate and compare house loan payments from <strong>Fixed Rate Mortgage</strong> and <strong>Adjustable Rate Mortgage</strong>.  This app helps you to project monthly loan payments for either the Fixed Loan Mortgage or the Adjustable Rate Mortgage or both.  The <strong>TOTAL of All Payments</strong> and <strong>TOTAL of All Interest Paid</strong> to the lender are also evaluated.
+    </p>
+    <p>
+      Payments can be calculated for many houses each with different types of loans.  All loan data for different houses can be saved.  Therefore, there is no need to recreate the loans for different houses.
+    </p>
+    <p>
+      <%= link_to apps_houseLoan_path, :class => "btn btn-default btn-custom", :type => "button" do %>
+        View details &raquo;
+      <% end %>
+      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button"  do %>
+        Question or Comment &raquo;
+      <% end %>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button"  do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+  </div>
+</div> <!-- end app item row -->
+
+<br/>
+<br/>
+
+<!-- row displaying BuyHouse app-->
+<%= render 'layouts/apps_buyhouse' %>
+
+<br/>
+<br/>
+
+<!-- row displaying FlipHouse app-->
+<%= render 'layouts/apps_fliphouse' %>
+

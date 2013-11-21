@@ -11,35 +11,34 @@
     </div>
   <% end %>
 
-  <div class="control-group">
-    <%= f.label :first_name, 'First Name', class: "control-label" %>
-    <div class="controls">
+  <form class="form-horizontal" role="form">
+
+    <div class="form-group">
+      <%= f.label :first_name, 'First Name', class: "col-sm-2 control-label" %>
       <%= f.text_field :first_name, size:30, placeholder: "Your First Name" %>
     </div>
-  </div>
 
-  <div class="control-group">
-    <%= f.label :last_name, 'Last Name', class: "control-label" %>
-    <div class="controls">
-      <%= f.text_field :last_name %>
+    <div class="form-group">
+      <%= f.label :last_name, 'Last Name', class: "col-sm-2 control-label" %>
+      <%= f.text_field :last_name, size:30, placeholder: "Your Last Name" %>
     </div>
-  </div>
 
-  <div class="control-group">
-    <%= f.label :email, class: "control-label" %>
-    <div class="controls">
-      <%= f.text_field :email %>
+    <div class="form-group">
+      <%= f.label :email, class: "col-sm-2 control-label" %>
+      <%= f.text_field :email, size:30, placeholder: "Your email" %>
     </div>
-  </div>
 
-  <div class="control-group">
-    <%= f.label :content, class: "control-label" %>
-    <div class="controls">
-      <%= f.text_area :content, size: "30x10" %>
+    <div class="form-group">
+      <%= f.label :content, class: "col-sm-2 control-label" %>
+      <%= f.text_area :content, size: "32x10", placeholder: "Enter your message" %>
     </div>
-  </div>
 
-  <div class="form-actions">
-      <%= f.submit 'Send Message' %>
-  </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= f.submit 'Send Message' %>
+      </div>
+    </div>
+    
+  </form>
+
 <% end %>

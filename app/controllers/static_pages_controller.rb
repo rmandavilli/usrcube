@@ -13,5 +13,8 @@ class StaticPagesController < ApplicationController
   	#@email_message = params[:emailMessage]
 
   end
+
+  def houseLoan
+  end
   
 end

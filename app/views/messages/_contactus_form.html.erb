@@ -1,0 +1,66 @@
+<%= form_for(@message, html:{class:'form-horizontal'}) do |f| %>
+  <% if @message.errors.any? %>
+    <div class="panel panel-danger">
+
+      <div class="panel-heading">
+        <h2 class="text-danger panel-title">
+          <%= pluralize(@message.errors.count, "error") %> prohibited this message from being sent:
+        </h2>
+      </div>
+
+      <div class="panel-body">
+        <ul>
+          <% @message.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+
+    </div>
+  <% end %>
+
+    <!--
+    <div id="error_explanation">
+      <h2 class="text-danger panel panel-danger panel-title panel-heading">
+        <%#= pluralize(@message.errors.count, "error") %> prohibited this message from being sent:
+      </h2>
+
+      <ul>
+        <%# @message.errors.full_messages.each do |msg| %>
+          <li><%#= msg %></li>
+        <%# end %>
+      </ul>
+    </div>
+    -->
+
+  <form class="form-horizontal" role="form">
+
+    <div class="form-group">
+      <%= f.label :first_name, 'First Name', class: "col-sm-2 control-label" %>
+      <%= f.text_field :first_name, size:30, placeholder: "Your First Name" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :last_name, 'Last Name', class: "col-sm-2 control-label" %>
+      <%= f.text_field :last_name, size:30, placeholder: "Your Last Name" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email, class: "col-sm-2 control-label" %>
+      <%= f.text_field :email, size:50, placeholder: "Your email" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :content, class: "col-sm-2 control-label" %>
+      <%= f.text_area :content, size: "52x10", placeholder: "Enter your message" %>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-10">
+        <%= f.submit 'Send Message' %>
+      </div>
+    </div>
+    
+  </form>
+
+<% end %>

@@ -25,12 +25,12 @@ module ApplicationHelper
     case flash_type
       when :success
         "alert-success"
-      when :error
-        "alert-error"
-      when :alert
-        "alert-block"
       when :notice
         "alert-info"
+      when :alert
+        "alert-warning"
+      when :error
+        "alert-danger"
       else
         flash_type.to_s
     end

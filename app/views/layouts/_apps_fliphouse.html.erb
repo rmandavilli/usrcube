@@ -1,0 +1,30 @@
+<!-- row displaying FlipHouse app-->
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%#= link_to image_tag("/assets/houseLoanIconIpad7@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
+    </p>
+	</div>
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Flip House Returns - Coming Soon !!</h3>
+      </div>
+    </div>
+ 		<p>
+    	This app calculates <strong>Return on Investment</strong> for flipping a house.
+    </p>
+    <p>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button", :disabled => "disabled" do %>
+        View details &raquo;
+      <% end %>
+      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button"  do %>
+        Question or Comment &raquo;
+      <% end %>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button", :disabled => "disabled"  do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+
+  </div>
+</div> <!-- end app item row -->
