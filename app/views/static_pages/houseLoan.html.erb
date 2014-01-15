@@ -10,15 +10,19 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
   </ol>
+
   <div class="carousel-inner">
 
     <!-- First carousel item -->
     <div class="item active">
-      <%= tag("img", src: "/assets/houseLoanIconIpad7@2x.png", class: "img-responsive", alt: "First slide") %>
+      <%= tag("img", src: "/assets/iTunesScrshotHouseLoanIphone5AddHouse.png", class: "img-responsive", alt: "First slide") %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Example headline.</h1>
+          <h1>Create many Houses</h1>
+          <p>Evaluate different mortgages for different houses or for the same house. There is no need to delete previous calculations.</p>
         </div>
       </div>
 
@@ -27,25 +31,48 @@
 
     <!-- Second carousel item -->
     <div class="item">
-      <img data-src="Users/raj_mandavilli/rails_projects/usrcube/assets/images/houseLoanIconIpad7@2x.png" alt="Second slide">
+      <%= tag("img", src: "/assets/iTunesScrshotHouseLoanIphone5FixedResults.png", class: "img-responsive", alt: "Second slide") %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1>Fixed Rate Mortgage</h1>
+          <!--p>View Fixed Rate Mortgage monthly payments by using slider at bottom to change months.</p-->
         </div>
       </div>
     </div>
 
     <!-- Third carousel item -->
     <div class="item">
-      <img data-src="Users/raj_mandavilli/rails_projects/usrcube/assets/images/houseLoanIconIpad7@2x.png" alt="Third slide">
+      <%= tag("img", src: "/assets/iTunesScrshotHouseLoanIphone5ArmResults.png", class: "img-responsive", alt: "Third slide") %>
       <div class="container">
         <div class="carousel-caption">
-          <h1>One more for good measure.</h1>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <h1>Adjustable Rate Mortgage</h1>
+          <!--p>View Adjustable Rate Mortgage payments by using slider at bottom.</p-->
         </div>
       </div>
     </div>
+
+    <!-- Fourth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/iTunesScrshotHouseLoanIphone5Compare.png", class: "img-responsive", alt: "Fourth slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Compare</h1>
+          <!--p>Compare monthly Fixed Rate vs Adjustable Rate Mortgage payments by using slider at bottom.</p-->
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/iTunesScrshotHouseLoanIphone5Definitions.png", class: "img-responsive", alt: "Fifth slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Definitions</h1>
+          <!--p>Display definitions of terms by double tapping on label.</p-->
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- carousel navigation -->
@@ -58,7 +85,7 @@
 
   <div class="col-sm-4 col-sm-offset-2">
   	<p>
-     	<%= link_to image_tag("/assets/houseLoanIconIpad7@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
+     	<%= link_to image_tag("/assets/houseLoanIconAppIpad@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
     </p>
 		<p>
      	<%= link_to "#", :class => "btn btn-default" do %>
@@ -77,7 +104,34 @@
     	Calculate and compare house loan payments from <strong>Fixed Rate Mortgage</strong> and <strong>Adjustable Rate Mortgage</strong>.  This app helps you to project monthly loan payments for either the Fixed Loan Mortgage or the Adjustable Rate Mortgage or both.  The <strong>TOTAL of All Payments</strong> and <strong>TOTAL of All Interest Paid</strong> to the lender are also evaluated.
     </p>
     <p>
-      Payments can be calculated for many houses each with different types of loans.  All loan data for different houses can be saved.  Therefore, there is no need to recreate the loans for different houses.
+      Payments can be calculated for multiple houses each with different types of loans.  All loan data for different houses are saved.  Therefore, there is no need to recreate the loans for different houses.
+    </p>
+    <p>
+      The following data is evaluated for both fixed loan mortgages and adjustable rate mortgages:
+      <ul>
+        <li><strong>Total of all Payments</strong> over life of the loan</li>
+        <li><strong>Total of all Interest paid</strong> to the lender over life of the loan</li>
+        <li>Monthly Mortgage Payment</li>
+        <li>Portion of Monthly Mortgage Payment going towards Principal</li>
+        <li>Portion of Monthly Mortgage Payment going towards Interest</li>
+        <li><strong>Total Payments to Date</strong></li>
+        <li>Principal Paid to Date</li>
+        <li>Interest Paid to Date</li>
+        <li><strong>Total Payments Yet to be Made</strong></li>
+        <li>Principal Yet to be Paid</li>
+        <li>Interest Yet to be Paid</li>
+        <li>Equity Accumulated on the house to Date</li>
+        <li>Total Monthly Payment that includes not only the monthly mortgage payment but also items such as homeowner’s insurance, property taxes, repair costs etc.</li>
+      </ul>
+    </p>
+    <p>
+      The data is evaluated for every month during the life of the loan for both the Fixed Loan Mortgage and the Adjustable Rate Mortgage.
+    </p>
+    <p>
+      For any house that is added, the loan parameters can be changed.  Under the Fixed Loan Mortgage, the interest rate and borrowing period can be changed.  For the Adjustable Rate Mortgage, the starting interest rate, the duration when the starting interest rate is fixed, the borrowing period, the expected interest rate adjustment, the interest rate cap can all be changed.  Therefore, various scenarios can be evaluated for both these types of mortgages.
+    </p>
+    <p>
+      For <strong>definitions</strong> on what the various terms mean, double-tap on the label.
     </p>
   </div>
 </div> <!-- end app item row -->
