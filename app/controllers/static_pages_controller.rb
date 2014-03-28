@@ -17,4 +17,7 @@ class StaticPagesController < ApplicationController
   def houseLoan
   end
   
+  def houseBuyRent
+  end
+
 end

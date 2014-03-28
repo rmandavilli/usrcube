@@ -2,26 +2,29 @@
 <div class="row">
   <div class="col-sm-4 col-sm-offset-2">
   	<p>
-     	<%#= link_to image_tag("/assets/houseLoanIconIpad7@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Loans for Houses', rel:'tooltip' %>
+     	<%= link_to image_tag("/assets/HouseBuyRent/AppIconIpadHouseBuyRent@2x.png", class: "img-responsive"), apps_houseBuyRent_path, title:'Buy House Or Rent', rel:'tooltip' %>
+      <h4 class="col-sm-offset-1">BuyHouse?</h4>
     </p>
 	</div>
   <div class="col-sm-6 col-sm-offset-0">
     <div class="panel panel-info">
       <div class="panel-heading"
-        <h3 class="text-info panel-title">Buy House or Rent - Coming Soon !!</h3>
+        <h3 class="text-info panel-title">Buy House or Rent</h3>
       </div>
     </div>
  		<p>
-    	This app helps you decide whether to <strong>buy a house or rent</strong>.
+    	This app helps you decide whether it is more economical to <strong>buy a house or rent</strong>.
     </p>
     <p>
-      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button", :disabled => "disabled" do %>
+      The app calculates an <u>estimate</u> of the money, when you buy a house, that does not come back to you AFTER taking into consideration <strong>tax deductions</strong> and <strong>equity accumulation</strong>.  Therefore, if the monthly renting cost is lower than this <u>estimate</u> then it is more economical to rent.  However, if the monthly rent is higher than this <u>estimate</u>, then it is more economical to buy the house.  Since this app makes calculations based on USA tax rules, it is designed for the USA market.
+    <p>
+      <%= link_to apps_houseBuyRent_path, :class => "btn btn-default btn-custom", :type => "button" do %>
         View details &raquo;
       <% end %>
-      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button"  do %>
+      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button" do %>
         Question or Comment &raquo;
       <% end %>
-      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button", :disabled => "disabled"  do %>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button" do %>
         Download from App Store &raquo;
       <% end %>
     </p>
