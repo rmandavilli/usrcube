@@ -1,0 +1,127 @@
+<% provide(:title, 'Buy House Or Rent') %>
+
+<h1>Buy House Or Rent</h1>
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide col-sm-offset-1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <!-- First carousel item -->
+    <div class="item active">
+      <%= tag("img", src: "/assets/HouseBuyRent/1iTunesScrshotIphone5HouseBuyRentAddHouse.png", class: "img-responsive", alt: "First slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Create many Houses</h1>
+          <p>Evaluate for many houses whether to buy the house or not. There is no need to delete previous calculations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/HouseBuyRent/2iTunesScrshotIphone5HouseBuyRentInputHouse.png", class: "img-responsive", alt: "Second slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>House Information</h1>
+          <p>Enter house price, buyer information, fixed mortgage and/or adjustable mortgage information.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/HouseBuyRent/3iTunesScrshotIphone5HouseBuyRentResultFixed.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-info cyan-color">Monthly expense when buying house</h1>
+          <p class="cyan-color">Renting is more economical if renting cost is lower than estimates of monthly expenses of owning a house.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/HouseBuyRent/4iTunesScrshotIphone5HouseBuyRentResultCompare.png", class: "img-responsive", alt: "Fourth slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-info cyan-color">Monthly expenses compared</h1>
+          <p class="cyan-color">Compare monthly expenses of owning a house under Fixed Rate and/or Adjustable Rate Mortgages.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/HouseBuyRent/5iTunesScrshotIphone5HouseBuyRentDefinition.png", class: "img-responsive", alt: "Fifth slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Definitions</h1>
+          <!--p>Display definitions of terms by double tapping on label.</p-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- carousel navigation -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+<!-- display app info-->
+<div class="row">
+
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%= link_to image_tag("/assets/HouseBuyRent/AppIconIpadHouseBuyRent@2x.png", class: "img-responsive"), apps_houseBuyRent_path, title:'BuyHouse?', rel:'tooltip' %>
+    </p>
+		<p>
+     	<%= link_to "#", :class => "btn btn-default" do %>
+        Download from App Store &raquo;
+      <% end %>
+		</p>
+	</div>
+
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">BuyHouse?</h3>
+      </div>
+    </div>
+ 		<p>
+      Are you trying to decide whether to BUY a house in order to take advantage of <strong>tax deductions</strong> and <strong>equity accumulation</strong>? Then this app helps you decide whether buying a house is more (or less) economical than renting.
+    </p>
+    <p>
+      The app calculates an <u>estimate</u> of the money, when you buy a house, that does not come back to you AFTER taking into consideration <strong>tax deductions</strong> and <strong>equity accumulation</strong>.  Therefore, if the monthly renting cost is lower than this <u>estimate</u> then it is more economical to rent.  However, if the monthly rent is higher than this <u>estimate</u>, then it is more economical to buy the house.  Since this app makes calculations based on USA tax rules, it is designed for the USA market.
+    </p>
+    <p>
+      Depending on the number of years, you plan to stay in the house, the app shows you the <u>estimated</u> money that is expensed or not returned.  This <u>estimate</u> will change yearly and decrease the longer you stay in the house.  In other words, the longer you stay in the house, it is likely to be more economical than renting.  The following information is needed to make the calculations.  The more accurate this information is, the more accurate are the estimates.
+      <ul>
+        <li>your tax bracket</li>
+        <li>property taxes for the house that you are planning to purchase</li>
+        <li>home insurance for the house</li>
+        <li>repair costs for the house</li>
+        <li>association fees for the house</li>
+        <li>Fixed rate mortgage information (if you are using this type of mortgage to purchase the house)</li>
+        <li>Adjustable rate mortgage information (if you are using this type of mortgage to purchase the house)</li>
+        <li>House Price</li>
+      </ul>
+    </p>
+    <p>
+      The <u>estimates</u> can be evaluated for many houses so you can compare and contrast. For each different house, input information such as house price, mortgage data and others can be changed to view different scenarios.
+    </p>
+    <p>
+      For <strong>definitions</strong> on what the various terms mean, double-tap on the label.
+    </p>
+  </div>
+</div> <!-- end app item row -->
