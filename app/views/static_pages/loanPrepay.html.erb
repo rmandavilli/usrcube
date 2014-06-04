@@ -1,0 +1,204 @@
+<% provide(:title, 'Prepay Loans') %>
+
+<h1>Prepay Loans</h1>
+
+<!-- display app info-->
+<div class="row">
+
+  <div class="col-sm-4 col-sm-offset-2">
+    <p>
+      <%= link_to image_tag("/assets/LoanPrepay/AppIconIpadLoanPrepay@2x.png", class: "img-responsive"), apps_loanPrepay_path, title:'PrepayLoan', rel:'tooltip' %>
+    </p>
+    <p>
+      <%= link_to "#", :class => "btn btn-default" do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+  </div>
+
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">PrepayLoan</h3>
+      </div>
+    </div>
+    <p>
+      <strong>Do you want to pay your loans off early and save on interest payments?</strong>  This app will show you how much money you save AND how soon you will clear your loan under various prepaying scenarios.  These prepaying scenarios include:
+      <ul>
+        <li>paying extra over the normal monthly payment</li>
+        <li>paying twice a month (bimonthly)</li>
+        <li>paying every two weeks (biweekly)</li>
+        <li>paying weekly</li>
+        <li>paying extra over the normal bimonthly payment</li>
+        <li>paying extra over the normal biweekly payment</li>
+        <li>paying extra over the normal weekly payment</li>
+        <li>paying off loan in shortened time</li>
+      </ul>
+    </p>
+    <p>
+      Loan payment scenarios can be calculated for many different loans.  Therefore, you can add many loans in this app such as your house loan, car loan, personal loan, or home equity loan and evaluate prepayment scenarios for each of them.
+    </p>
+    <p>
+      The different payment amounts are also calculated for each of these prepayment scenarios.  The app calculates savings for the above scenarios by using:
+      <ul>
+        <li>any additional amount that you wish to make</li>
+        <li>any starting month to make the additional payments</li>
+        <li>any ending month to stop the additional payments</li>
+      </ul>
+      In other words, the effect of the additional payments can be evaluated when they are made over the life of the loan or for a certain number of months.
+    <p>
+      For <strong>definitions</strong> on what the various terms mean, double-tap on the label.  This app is also available in the following <strong>languages</strong>:
+      <ul>
+        <li>Simplified Chinese</li>
+        <li>Japanese</li>
+        <li>Korean</li>
+        <li>German</li>
+        <li>Spanish</li>
+      </ul>
+    </p>
+  </div>
+</div> <!-- end display app info -->
+
+<!-- Carousel to create Loan
+================================================== -->
+<br/>
+<br/>
+<h3 class="col-sm-offset-1">
+  To add or create a loan, please follow the steps outlined below:
+</h3>
+<br/>
+<br/>
+<div id="myCarousel" class="carousel slide col-sm-offset-1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <!-- First carousel item -->
+    <div class="item active">
+      <%= tag("img", src: "/assets/LoanPrepay/1appOverviewIphone5LoanPrepayEnCreateLoans.png", class: "img-responsive", alt: "First slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Create many Loans</h1>
+          <p>To create your list of Loans as shown in example below, tap + button to add loans.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/2appOverviewIphone5LoanPrepayEnInputLoan.png", class: "img-responsive", alt: "Second slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Loan Details</h1>
+          <p>Enter Loan Amount and a reference name.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/3appOverviewIphone5LoanPrepayEnInputFixedLoan.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Fixed Rate Loan Details</h1>
+          <p class="cyan-color">Provide interest rate for fixed rate loan and borrowing period.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- carousel navigation -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+</div><!-- /. end carousel to create Loan -->
+
+<!-- Carousel to view results
+================================================== -->
+<h3 class="col-sm-offset-1">
+  To view the results or savings under the different prepayment scenarios, please follow the steps outlined below:
+</h3>
+<br/>
+<br/>
+
+<div id="resultsCarousel" class="carousel slide col-sm-offset-1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#resultsCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#resultsCarousel" data-slide-to="1"></li>
+    <li data-target="#resultsCarousel" data-slide-to="2"></li>
+    <li data-target="#resultsCarousel" data-slide-to="3"></li>
+    <li data-target="#resultsCarousel" data-slide-to="4"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <!-- First carousel item -->
+    <div class="item active">
+      <%= tag("img", src: "/assets/LoanPrepay/4appOverviewIphone5LoanPrepayEnHowTo.png", class: "img-responsive", alt: "First slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>How to Use</h1>
+          <p>Tap on  i  to change loan parameters. Tap on row to view results.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/5appOverviewIphone5LoanPrepayEnMenu.png", class: "img-responsive", alt: "Second slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Different methods to prepay Loan</h1>
+          <p class="cyan-color">Select method to prepay Loan and view possible savings.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/6appOverviewIphone5LoanPrepayEnResultExtraMonthlySeries.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Pay Extra Monthly</h1>
+          <p>View Results of paying extra money on top of your monthly payment for a few months.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/7appOverviewIphone5LoanPrepayEnResultFrequentBiWeekly.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-info cyan-color">Pay More Frequently</h1>
+          <p class="cyan-color">View Results of paying biweekly instead of monthly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/LoanPrepay/8appOverviewIphone5LoanPrepayEnResultPeriodReduction.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-info cyan-color">Loan Period Reduction</h1>
+          <p class="cyan-color">View Results for paying off loan in specified time.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- carousel navigation -->
+  <a class="left carousel-control" href="#resultsCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#resultsCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+</div><!-- /. end carousel to view results -->
+

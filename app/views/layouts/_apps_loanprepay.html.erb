@@ -1,0 +1,33 @@
+<!-- row displaying LoanPrepay app-->
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%= link_to image_tag("/assets/LoanPrepay/AppIconIpadLoanPrepay@2x.png", class: "img-responsive"), apps_loanPrepay_path, title:'Prepay Loans', rel:'tooltip' %>
+      <h4 class="col-sm-offset-1">PrepayLoan</h4>
+    </p>
+	</div>
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Prepay Loans</h3>
+      </div>
+    </div>
+      <p>
+        <strong>Do you want to pay your loans off early and save on interest payments?</strong>  This app will show you how much money you save AND how soon you will clear your loan under various prepaying scenarios.  The prepaying scenarios include making additional payments such as paying extra monthly or paying weekly or calculating the required payments in order to clear the loan in a specified time.
+      <p>
+        Loan prepayment scenarios can be calculated for many different loans.  Therefore, you can add many loans in this app such as your <strong>house loan</strong>, <strong>car loan</strong>, <strong>personal loan</strong>, or <strong>home equity loan</strong> and evaluate prepayment scenarios for each of them.
+      <p>
+      </p>
+      <%= link_to apps_loanPrepay_path, :class => "btn btn-default btn-custom", :type => "button" do %>
+        View details &raquo;
+      <% end %>
+      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button" do %>
+        Question or Comment &raquo;
+      <% end %>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button" do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+
+  </div>
+</div> <!-- end LoanPrepay app item row -->

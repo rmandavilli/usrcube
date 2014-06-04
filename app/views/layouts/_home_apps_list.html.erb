@@ -1,0 +1,37 @@
+<!-- list of apps on home page -->
+
+<h3 align="left">
+  Here are our current Apps - Please download from the iTunes App Store
+</h3>
+
+<!-- add some empty lines -->
+<br>
+<br>
+
+<!-- title row -->
+<div class="wall">
+	<div class="row">
+
+	  <div class="col-sm-4">
+  		<p>
+     		<%= link_to image_tag("/assets/houseLoanIconAppIpad@2x.png", class: "img-responsive"), apps_houseLoan_path, title:'Compare House Loans', rel:'tooltip' %>
+      	<h4 class="col-sm-offset-1">Loan4House</h4>
+    	</p>
+		</div>
+
+	  <div class="col-sm-4">
+  		<p>
+     		<%= link_to image_tag("/assets/HouseBuyRent/AppIconIpadHouseBuyRent@2x.png", class: "img-responsive"), apps_houseBuyRent_path, title:'Buy House Or Rent', rel:'tooltip' %>
+      	<h4 class="col-sm-offset-1">BuyOrRent?</h4>
+    	</p>
+	  </div>
+
+	  <div class="col-sm-4">
+  		<p>
+    		<%= link_to image_tag("/assets/LoanPrepay/AppIconIpadLoanPrepay@2x.png", class: "img-responsive"), apps_loanPrepay_path, title:'Prepay Loans', rel:'tooltip' %>
+      	<h4 class="col-sm-offset-1">PrepayLoan</h4>
+    	</p>
+	  </div>
+
+	</div>  <!-- end row -->
+</div>  <!-- end wall -->
