@@ -1,0 +1,104 @@
+<% provide(:title, 'Payday Loan Interest') %>
+
+<h1>Payday Loan Interest</h1>
+
+<!-- display app info-->
+<div class="row">
+
+  <div class="col-sm-4 col-sm-offset-2">
+    <p>
+      <%= link_to image_tag("/assets/APRPaydayLoan/aprPaydayLoanIconAppIpad@2x.png", class: "img-responsive"), apps_aprPaydayLoan_path, title:'Payday Loan Interest', rel:'tooltip' %>
+    </p>
+    <p>
+      <%= link_to "#", :class => "btn btn-default" do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+  </div>
+
+  <div class="col-sm-6 col-sm-offset-0">
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Payday Loan Interest</h3>
+      </div>
+    </div>
+    <p>
+        <strong>Have you ever wondered what the interest rate is when you take a Payday Loan?</strong>  Then this app calculates the interest rates for different kinds of Payday Loans.  The <strong>Annual Percentage Rate (APR)</strong> and <strong>Effective Annual Rate (EAR)</strong> are calculated for these Payday Loans.  Just enter the loan amount, the amount to pay back, and the number of days to pay back for each Payday Loan.  This app gives you the ability to compare the interest rates of many Payday Loans each with different terms.
+    </p>
+  </div>
+</div> <!-- end display app info -->
+
+
+<!-- Carousel to view the process of creating Payday Loans and viewing results
+================================================== -->
+<br/>
+<br/>
+<h3 class="col-sm-offset-1">
+  To view the interest rates for a Payday Loan, please follow the steps outlined below:
+</h3>
+<br/>
+<br/>
+
+<div id="paydayloanCarousel" class="carousel slide col-sm-offset-1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#paydayloanCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#paydayloanCarousel" data-slide-to="1"></li>
+    <li data-target="#paydayloanCarousel" data-slide-to="2"></li>
+    <li data-target="#paydayloanCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <div class="carousel-inner">
+
+    <!-- First carousel item -->
+    <div class="item active">
+      <%= tag("img", src: "/assets/APRPaydayLoan/1appOverviewIphone5APRPaydayLoanEnCreateLoans.png", class: "img-responsive", alt: "First slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Payday Loan</h1>
+          <p>Tap on  +  to create a Payday Loan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/APRPaydayLoan/2appOverviewIphone5APRPaydayLoanEnInputLoan.png", class: "img-responsive", alt: "Second slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Loan Information</h1>
+          <p>Enter the Payday Loan details.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/APRPaydayLoan/4appOverviewIphone5APRPaydayLoanEnResultInterestRates.png", class: "img-responsive", alt: "Third slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="cyan-color">Interest Rates</h1>
+          <p class="cyan-color">Calculate Interest Rates for the Payday Loan by tapping the "Calculate" button.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fourth carousel item -->
+    <div class="item">
+      <%= tag("img", src: "/assets/APRPaydayLoan/3appOverviewIphone5APRPaydayLoanEnHowTo.png", class: "img-responsive", alt: "Fourth slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-info cyan-color">How To Use</h1>
+          <p class="cyan-color">Create many Payday Loans to compare. Select any to view results.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>   <!-- end carousel inner -->
+
+  <!-- carousel navigation -->
+  <a class="left carousel-control" href="#paydayloanCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#paydayloanCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+</div><!-- /. end paydayloanCarousel to create Payday Loan and view results -->
+

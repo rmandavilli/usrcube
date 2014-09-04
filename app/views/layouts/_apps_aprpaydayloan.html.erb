@@ -1,0 +1,33 @@
+<!-- row displaying APRPaydayLoan app-->
+<div class="row">
+
+  <div class="col-sm-4 col-sm-offset-2">
+  	<p>
+     	<%= link_to image_tag("/assets/APRPaydayLoan/aprPaydayLoanIconAppIpad@2x.png", class: "img-responsive"), apps_aprPaydayLoan_path, title:'Payday Loan Interest', rel:'tooltip' %>
+      <h4 class="col-sm-offset-0">Payday Loan Interest</h4>
+    </p>
+	</div>
+
+  <div class="col-sm-6 col-sm-offset-0"> <!-- begin description -->
+    <div class="panel panel-info">
+      <div class="panel-heading"
+        <h3 class="text-info panel-title">Payday Loan Interest</h3>
+      </div>
+    </div>
+      <p>
+        <strong>Have you ever wondered what the interest rate is when you take a Payday Loan?</strong>  Then this app calculates the interest rates for different kinds of Payday Loans.  The <strong>Annual Percentage Rate (APR)</strong> and <strong>Effective Annual Rate (EAR)</strong> are calculated for these Payday Loans.  Just enter the loan amount, the amount to pay back, and the number of days to pay back for each Payday Loan.  This app gives you the ability to compare the interest rates of many Payday Loans each with different terms.
+      </p>
+      <%= link_to apps_aprPaydayLoan_path, :class => "btn btn-default btn-custom", :type => "button" do %>
+        View details &raquo;
+      <% end %>
+      <%= link_to new_message_path, :class => "btn btn-default btn-custom", :type => "button" do %>
+        Question or Comment &raquo;
+      <% end %>
+      <%= link_to "#", :class => "btn btn-default btn-custom", :type => "button" do %>
+        Download from App Store &raquo;
+      <% end %>
+    </p>
+
+  </div> <!-- end description -->
+
+</div> <!-- end APRPaydayLoan app item row -->

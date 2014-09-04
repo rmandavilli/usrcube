@@ -23,4 +23,7 @@ class StaticPagesController < ApplicationController
   def loanPrepay
   end
 
+  def aprPaydayLoan
+  end
+
 end

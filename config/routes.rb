@@ -11,6 +11,7 @@ Usrcube::Application.routes.draw do
   match '/apps/houseLoan',        to: 'static_pages#houseLoan',         via: 'get'
   match '/apps/houseBuyRent',     to: 'static_pages#houseBuyRent',      via: 'get'
   match '/apps/loanPrepay',       to: 'static_pages#loanPrepay',        via: 'get'
+  match '/apps/aprPaydayLoan',    to: 'static_pages#aprPaydayLoan',     via: 'get'
 
   #match '/support',     to: 'static_pages#support',     via: 'get'
   #match '/support',     to: 'static_pages#support',     via: 'post'
